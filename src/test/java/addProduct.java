@@ -9,7 +9,7 @@ public class addProduct {
 
     @Test
     public void addProductToCart(){
-        new P01_LoginPaage(driver).loginSteps(testJson.getTestData("userName"), testJson.getTestData("password")).navigateToProducts();
+        new P01_LoginPaage(driver).loginSteps(testJson.getTestData("userName"), testJson.getTestData("password")).navigateToProducts().addProducts().productsVerifications();
 
 
     }

@@ -1,4 +1,5 @@
 import com.shaft.driver.SHAFT;
+import io.qameta.allure.Step;
 import lombok.SneakyThrows;
 import org.openqa.selenium.By;
 
@@ -14,7 +15,10 @@ public class P01_LoginPaage {
     By loginBtn = By.xpath("//button[@data-qa=\"login-button\"]");
 
 
+
+
     //Methods
+    @Step("Login with vaild email and password")
     @SneakyThrows
     public P02_HomePaage loginSteps(String userName, String password){
         driver.element().type(emailInput,userName).
